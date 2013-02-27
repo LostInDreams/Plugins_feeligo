@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    var oGiftBar = new FlgGiftBar();
+    oGiftBar.oMessages.empty_message = '__message_empty_message__';
+    oGiftBar.sPageReceiver  = '__module_path__';
+    oGiftBar.iUpdateTime    = __update_time__;
+    oGiftBar.iLastMessageId = __last_message_id__;
+    oGiftBar.sWaitMessage   = '__wait_cpt__';	
+
+    $('#giftbar_msg_field').parent().addClass('giftbar_send_field');
+
+    var elGiftbar = $('.' + oGiftBar.sMessagesContainer);
+    if(elGiftbar) {
+        var iBoxPadding = 20;
+        var iGiftbarParentWidth = elGiftbar.parents('.form_advanced_wrapper').width();
+        elGiftbar.css('width', iGiftbarParentWidth - iBoxPadding);
+    }
+
+    oGiftBar.scrollContent();
+
+    $(document).ready(function () {
+        oGiftBar.getMessages();
+    });
+</script>

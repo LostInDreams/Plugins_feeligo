@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.À" type="plugin" group="system" method="upgrade">
+	<name>Giftbar</name>
+	<author>Feeligo</author>
+	<creationDate>23 october 2012</creationDate>
+	<copyright>GNU/GPLv2</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>tech@feeligo.com</authorEmail>
+	<authorUrl>www.feeligo.com</authorUrl>
+	<version>1.1</version>
+	<isapplication>true</isapplication>
+	<description>Giftbar Plugin for JomSocial.</description>
+
+	<files>
+		<file plugin="giftbar">giftbar.php</file>
+		<folder>common</folder>
+        <folder>adapter</folder>
+	</files>
+
+	<menuitem>
+	</menuitem>
+
+	<params>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+</install>
